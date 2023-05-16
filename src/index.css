@@ -137,21 +137,29 @@ button:active {
 */
 
 .mobileNav {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 30;
   width: 100vw;
+  z-index: 30;
   height: auto;
-  transition: 0.5ms ease-in-out;
-  transition-duration: 0.5ms;
+}
+
+.mobileNav ul {
+  position: relative;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 7% 14% 5% 10%;
 }
 
 .mobileNavBtn {
   position: absolute;
-  top: 3;
-  right: 3;
+  top: 3rem;
+  right: 3rem;
   z-index: 35;
 }
 
