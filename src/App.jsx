@@ -1,7 +1,7 @@
-import {  Fragment } from "react";
+import { useState, useEffect, Fragment } from "react";
 import Layout from "./components/Layout/Layout";
 import Hero from "./components/Layout/desktop/Hero";
-// import { ScaleLoader } from "react-spinners";
+import { ScaleLoader } from "react-spinners";
 
 import DesktopNav from "./components/navigation/DesktopNav";
 import About from "./components/Layout/About";
@@ -11,22 +11,23 @@ import PastProjects from "./components/Layout/PastProjects";
 import MobileNav from "./components/navigation/MobileNav";
 
 function App() {
-  // const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
-  // useEffect(() => {
-  //   window.addEventListener("load", () => {
-  //     return setLoading(false);
-  //   });
+  useEffect(() => {
+   let loaderSetTimeout =setTimeout(() =>{
+      setLoading(false)
+    }, 1500)
 
-  //   return () => {
-  //     window.removeEventListener("load", () => {
-  //       return setLoading(false);
-  //     });
-  //   };
-  // }, []);
+    return (() => {
+      clearTimeout(loaderSetTimeout)
+    })
+  }, []);
 
   return (
-    
+      <>
+       {loading ? <div className="flex h-screen justify-center items-center">
+          <ScaleLoader color="#0678E3" size={100} />
+        </div> :
         <Fragment>
           <DesktopNav />
           <MobileNav />
@@ -37,8 +38,9 @@ function App() {
             <Resume />
             <PastProjects />
           </Layout>
-        </Fragment>  
-  );
+        </Fragment>}
+      </>
+      )
 }
 
 export default App;
