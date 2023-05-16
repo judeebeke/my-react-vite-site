@@ -156,11 +156,35 @@ button:active {
   padding: 7% 14% 5% 10%;
 }
 
-.mobileNavBtn {
+ .hamburger {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  z-index: 35;
+  transform: scale(1);
+}
+
+ .closeBtn {
   position: absolute;
   top: 3rem;
   right: 3rem;
   z-index: 35;
+  transform: scale(1);
+}
+
+.hamburger:hover, .closeBtn:hover {
+  transform: scale(1.4);
+}
+
+.navLinks {
+  z-index: 30;
+}
+
+.overlay {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left:0;
 }
 
 @media (min-width: 976px) {
