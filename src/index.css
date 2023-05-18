@@ -55,43 +55,27 @@ button:active {
   .back-to-top
 --------------------------------------------------------------*/
 
-.back-to-top {
+.scroll-to-top-button {
   position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
+  bottom: 2rem;
+  right: 2rem;
   background: #0563bb;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
+  opacity: 0;
+  visibility: hidden;
+  /* transition: all 0.4s; */
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
-.back-to-top:hover {
-  background: #0678e3;
+scroll-to-top-button:hover {
+  background: #728394;
   color: #fff;
 }
 
-.back-to-top.active {
-  visibility: visible;
+.scroll-to-top-button.visible {
   opacity: 1;
+  visibility: visible;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
-
-/* #preloader {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(50%, 50%);
-  z-index: 1000;
-  overflow: hidden;
-  background: #fff;
-} */
 
 /*--------------------------------------------------------------
 # Header
@@ -118,6 +102,9 @@ button:active {
   position: relative; 
 }
 
+.desktopNavList {
+  transition: all 0.3s ease-out;
+}
 
 @media (min-width: 976px) {
   .desktopNav {
@@ -149,27 +136,39 @@ button:active {
   height: auto;
 }
 
+@keyframes navappears {
+  from {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .mobileNav ul {
   position: relative;
   width: 100vw;
   margin: 0 auto;
   padding: 7% 14% 5% 10%;
+  animation: navappears 1s ease-out forwards;
 }
 
- .hamburger {
+ .hamburger, .closeBtn {
   position: absolute;
-  top: 3rem;
-  left: 3rem;
+  top: 2rem;
   z-index: 35;
   transform: scale(1);
+}
+
+.hamburger {
+  left: 2rem;
 }
 
  .closeBtn {
-  position: absolute;
-  top: 3rem;
   right: 3rem;
-  z-index: 35;
-  transform: scale(1);
 }
 
 .hamburger:hover, .closeBtn:hover {
@@ -294,6 +293,22 @@ button:active {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
+.portfolioImages {
+  animation: portfolioappears 1s ease-out forwards;
+}
+
+@keyframes portfolioappears {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /*--------------------------------------------------------------
 # Portfolio Details

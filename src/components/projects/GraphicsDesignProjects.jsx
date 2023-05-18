@@ -24,7 +24,7 @@ const GraphicsDesignProjects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
         {graphicsProjectImage.map((img, index) => {
           return (
-            <figure key={index}>
+            <figure key={index} className="portfolioImages">
               <img
                 src={img}
                 className="w-64 h-9/12 lg:w-80"

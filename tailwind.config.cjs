@@ -20,6 +20,7 @@ module.exports = {
       white: "#ffffff",
       lowWhite: "#dfdfdf",
       mildMain: "#728394",
+      lowMain: "#f7f8f9",
       html: "#e75e0e",
       css: "#1392e6",
       js: "#e9e509",

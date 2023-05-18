@@ -1,6 +1,5 @@
 import { BiHomeAlt, BiUser, BiBookContent, BiEnvelope,  } from "react-icons/bi";
 import { AiOutlineFile, AiFillHtml5, AiOutlineGithub, AiOutlineLinkedin, AiOutlineTwitter, AiOutlineFacebook } from "react-icons/ai";
-import { CgDatabase  } from "react-icons/cg";
 import { SiTailwindcss, SiCss3, SiJavascript, SiFirebase, SiAdobephotoshop  } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
 import { MdDraw } from "react-icons/md";
@@ -63,11 +62,6 @@ export const navLinks = [
     navLinksRef: "project",
   },
   {
-    navLinkText: "Services",
-    navLinksIcons: <CgDatabase />,
-    navLinksRef: "service",
-  },
-  {
     navLinkText: "Contacts",
     navLinksIcons: <BiEnvelope />,
     navLinksRef: "contact",
@@ -85,14 +79,14 @@ export const personalData = [
 ];
 
 export const skillSet = [
-  { id: "s1", icon: <AiFillHtml5 />, name: "HTML5", color: "hover:text-html", link: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5" },
-  { id: "s2", icon:<SiCss3 />, name: "CSS3", color: "hover:text-css", link: "https://developer.mozilla.org/en-US/docs/Web/CSS"},
-  { id: "s3", icon: <SiJavascript />, name: "JavaScript", color: "hover:text-js", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"},
-  { id: "s4", icon: <RiReactjsFill />, name: "Reactjs",  color: "hover:text-react", link: "https://react.dev/" },
-  { id: "s5", icon: <SiTailwindcss />, name: "Tailwind CSS", color: "hover:text-tail", link: "https://v2.tailwindcss.com/docs"},
-  { id: "s6", icon: <SiFirebase />, name: "Firebase", color: "hover:text-fire", link: "https://firebase.google.com/docs"},
-  { id: "s7", icon: <MdDraw />, name: "CorelDraw", color: "hover:text-corel", link: "https://learn.corel.com/tutorials/coreldraw-document-setup/"},
-  { id: "s8", icon: <SiAdobephotoshop />, name: "Photoshop", color: "hover:text-photo", link: "https://helpx.adobe.com/photoshop/user-guide.html"},
+  { id: "s1", icon: <AiFillHtml5 />, name: "HTML5", color: "text-html", hovercolor: "hover:text-html", link: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5" },
+  { id: "s2", icon:<SiCss3 />, name: "CSS3", color: "text-css", hovercolor: "hover:text-css", link: "https://developer.mozilla.org/en-US/docs/Web/CSS"},
+  { id: "s3", icon: <SiJavascript />, name: "JavaScript", color: "text-js", hovercolor: "hover:text-js", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"},
+  { id: "s4", icon: <RiReactjsFill />, name: "Reactjs", color: "text-react", hovercolor: "hover:text-react", link: "https://react.dev/" },
+  { id: "s5", icon: <SiTailwindcss />, name: "Tailwind CSS", color: "text-tail", hovercolor: "hover:text-tail", link: "https://v2.tailwindcss.com/docs"},
+  { id: "s6", icon: <SiFirebase />, name: "Firebase", color: "text-fire", hovercolor: "hover:text-fire", link: "https://firebase.google.com/docs"},
+  { id: "s7", icon: <MdDraw />, name: "CorelDraw", color: "text-corel", hovercolor: "hover:text-corel", link: "https://learn.corel.com/tutorials/coreldraw-document-setup/"},
+  { id: "s8", icon: <SiAdobephotoshop />, name: "Photoshop", color: "text-photo", hovercolor: "hover:text-photo", link: "https://helpx.adobe.com/photoshop/user-guide.html"},
 ];
 
 export const graphicsProjectImage = [
