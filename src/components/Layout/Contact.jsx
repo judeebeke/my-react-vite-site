@@ -49,6 +49,7 @@ const Contact = () => {
       console.error(error);
     }
 
+    alert("Form Successfully Submitted!")
     setUserName("");
     setUserEmail("");
     setSubject("");
