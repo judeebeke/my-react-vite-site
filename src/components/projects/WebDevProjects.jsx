@@ -62,6 +62,8 @@ const WebDevProjects = () => {
                   <p className='pt-1'><strong>Description: </strong>{data.description}
                     <br/><br />
                     <strong>Improvements: </strong> {data.improvement}
+                    <br />
+                    <button onClick={()=>{viewProjectDetailsHandler(false, 0)}} className="text-2xl bg-lowDark p-1 text-white text-center"><AiOutlineEyeInvisible /></button>
                   </p>
                 </div> }
             <img
