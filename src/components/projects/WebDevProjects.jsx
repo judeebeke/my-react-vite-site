@@ -16,7 +16,7 @@ const WebDevProjects = () => {
       {webProjectImage.map((data) => {
         return (
             <figure key={data.id}  className="relative max-w-lg max-h-lg h-48 text-dark lg:w-80">
-              <div className={`absolute top-0 left-0 w-full h-full ${viewProjectDetails ? "p-4 text-base font-medium overflow-auto": `font-bold text-center text-3xl ${flexStyle} flex-col gap-y-6`} opacity-0 transition-all ease-linear duration-300 hover:opacity-70 focus:opacity-70 hover:bg-white focus:bg-white`} onMouseLeave={()=>{viewProjectDetailsHandler(false)}}>
+              <div className={`absolute top-0 left-0 w-full h-full ${viewProjectDetails ? "p-4 text-base font-medium overflow-auto": `font-bold text-center text-3xl ${flexStyle} flex-col gap-y-6`} opacity-0 transition-all ease-linear duration-300 hover:opacity-70 focus:opacity-70 hover:bg-white focus:bg-white`}>
                 {viewProjectDetails ? <div>
                   <span className='w-full flex justify-between text-white text-lg bg-lowDark items-center px-2 py-1'>
                     <p>{data.title}</p>
