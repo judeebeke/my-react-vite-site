@@ -15,7 +15,6 @@ const WebDevProjects = () => {
 
   const viewProjectDetailsHandler = (bool, id) => {
     setViewProject(bool);
-    console.log(bool, id)
     setCurrentViewProject(id)
   };
 
@@ -53,7 +52,7 @@ const WebDevProjects = () => {
                 </>
             </div>
               }
-            {data.id === currentViewProject && <div className={`${viewProjectDetails ? "flex flex-col " : "hidden" } absolute top-0 left-0 w-full h-full p-4 text-base font-medium overflow-auto  opacity-70 text-dark dark:text-white bg-white dark:bg-dark`}  onMouseLeave={() => {
+            {data.id === currentViewProject && <div className={`${viewProjectDetails ? "flex flex-col" : "hidden" } absolute top-0 left-0 w-full h-full p-4 text-base font-medium overflow-auto transition-all ease-linear duration-300 opacity-70 text-dark dark:text-white bg-white dark:bg-dark`}  onMouseLeave={() => {
                 viewProjectDetailsHandler(false, 0);
               }}>
                   <span className='w-full flex justify-between text-white text-lg bg-lowDark items-center px-2 py-1'>

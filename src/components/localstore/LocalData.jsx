@@ -113,6 +113,7 @@ export const webProjectImage = [
     image: contact,
     title: "Organisation Contact App",
     description: "Organisation Contact App was built with ReactJS and Tailwind CSS, the app allows users to create a contact card which includes name, age and position. A filter system was added to the app, users details can be edited, and contact cards can also be deleted. To store and retrieve users info, Firebase Realtime database was used.",
+  improvement: "Improvements can be made on the app, such as, authentication and authorisation, and improved user interface.",
     url: "https://org-member-info-app.vercel.app/",
     github: "https://github.com/judeebeke/a_react_contact_app",
   },
