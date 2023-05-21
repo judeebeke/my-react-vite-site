@@ -29,7 +29,7 @@ In the realm of graphics design, I am passionate about visual storytelling and c
                 <ul className='grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6'>
                 {personalData.map(data => {
                   return (
-                    <li key={data.id} className='text-xl flex'><span className='text-main text-3xl'><RxCaretRight  /></span> <strong className="pr-2">{data.type}:</strong>{data.value}</li>
+                    <li key={data.id} className='text-xl flex flex-wrap'><span className='text-main text-3xl'><RxCaretRight  /></span> <strong className="pr-2">{data.type}:</strong>{data.value}</li>
                   )
                 })}
                 </ul>
