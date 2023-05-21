@@ -1,5 +1,6 @@
 import { useState, useEffect, Fragment } from "react";
 import { ScaleLoader } from "react-spinners";
+import {BsMoonStars, BsSun} from 'react-icons/bs';
 import AOS from "aos";
 
 import Layout from "./components/Layout/Layout";
@@ -18,6 +19,11 @@ import "aos/dist/aos.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
+
+  const htmlEl = document.getElementById('htmlElement') 
+  const bodyEl = document.getElementById('bodyElement') 
+
 
   useEffect(() => {
     AOS.init({
@@ -28,10 +34,32 @@ function App() {
       setLoading(false)
     }, 1500)
 
+    const dark_Mode = JSON.parse(localStorage.getItem('dark-mode'))
+
+    if(dark_Mode !== null) {
+      setDarkMode(dark_Mode.dark)
+    }
+
+
+
     return (() => {
       clearTimeout(loaderSetTimeout)
     })
   }, []);
+
+  const darkModeHandler = () => {
+    setDarkMode(true)
+    htmlEl.classList.add('dark');
+    bodyEl.classList.add('darkMode');
+    localStorage.setItem('dark-mode', JSON.stringify({dark: true}))
+  }
+
+  const lightModeHandler = () => {
+    setDarkMode(false)
+    htmlEl.classList.remove('dark')
+    bodyEl.classList.remove('darkMode');
+    localStorage.setItem('dark-mode', JSON.stringify({dark: false})) 
+  }
 
   return (
       <>
@@ -39,6 +67,7 @@ function App() {
           <ScaleLoader color="#0678E3" size={100} />
         </div> :
         <Fragment>
+          {darkMode ? <button className="fixed cursor-pointer z-40 top-8 right-9 text-2xl font-extrabold text-white" onClick={lightModeHandler}><BsSun /></button> : <button className="fixed cursor-pointer z-40 top-8 right-9 text-2xl font-extrabold" onClick={darkModeHandler}><BsMoonStars /></button>}
           <DesktopNav />
           <MobileNav />
           <Layout>

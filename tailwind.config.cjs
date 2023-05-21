@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-undef
 module.exports = {
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   content: ["./src/**/*.{html,js}"],
   theme: {

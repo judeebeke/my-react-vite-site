@@ -6,7 +6,7 @@ import {ImQuotesLeft, ImQuotesRight} from 'react-icons/im';
 const Testimonial = () => {
     
   return (
-    <section className="section bg-lowMain" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="300" data-aos-offset="0" data-aos-easing="ease-in-back">
+    <section className="section bg-lowMain dark:bg-lowDark dark:text-white" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="300" data-aos-offset="0" data-aos-easing="ease-in-back">
       <Heading headingTitle="TESTIMONIAL" />
         <figure className="flex flex-col justify-center items-center ">
             <div className={`${flexStyle} flex-col mb-4`}>

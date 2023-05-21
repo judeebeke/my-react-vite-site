@@ -5,6 +5,13 @@
 
 :root {
   --milky-white: rgba(255, 255, 255, 0.8);
+  --milky-black: rgba(13, 21, 28, 0.8);
+  --light: rgb(255, 255, 255);
+  --dark: #272829;
+  --hero: #cccccc;
+  --lowDark: #0e151b;
+  --main: #0563bb;
+  --lowwhite: #ddd;
 }
 
 * {
@@ -17,39 +24,22 @@ html {
 
 body {
   margin: 0;
-  background-color: #ffffff;
-  color: #272829;
+  background-color: var(--light);
+  color: var(--dark);
   height: 100vh;
   width: 100vw;
   overflow-x: hidden !important;
 }
 
-/* a {
-  color: #0563bb;
-  text-decoration: none;
+.darkMode {
+  background-color: var(--dark) !important;
+  color: var(--milky-white) !important;
+  --hero: var(--dark) !important;
+  --lowDark: var(--hero) !important;
+  --milky-white: var(--milky-black) !important;
+  --main: var(--lowwhite);
+  --lowwhite: var(--main)
 }
-
-a:hover {
-  color: #067ded;
-  text-decoration: none;
-} */
-
-/* button {
-  font: inherit;
-  cursor: pointer;
-  padding: 0.5rem 1.5rem;
-  border-radius: 6px;
-  background-color: transparent;
-  color: #1a8ed1;
-  border: 1px solid #1a8ed1;
-}
-
-button:hover,
-button:active {
-  background-color: #1ac5d1;
-  border-color: #1ac5d1;
-  color: white;
-} */
 
 /*--------------------------------------------------------------
   .back-to-top
@@ -197,7 +187,7 @@ scroll-to-top-button:hover {
 --------------------------------------------------------------*/
 .hero {
   background-image: url("./components/assets/images/hero-image.jpg");
-  background-color: #cccccc;
+  background-color: var(--hero);
   height: 100vh;
   width: 100vw;
   background-position: center;
@@ -229,7 +219,7 @@ scroll-to-top-button:hover {
   flex-direction: column;
   row-gap: 1rem;
   text-align: start;
-  color: #0e151b;
+  /* color: var(--lowDark); */
   z-index: 10;
 }
 
@@ -255,14 +245,14 @@ scroll-to-top-button:hover {
   display: block;
   width: 40px;
   height: 3px;
-  background: #0563bb;
+  background: --main;
 }
 
 .section-title-line-two {
   display: block;
   width: 120px;
   height: 1px;
-  background: #ddd;
+  background: --lowwhite;
 }
 
 @media (min-width: 976px) {

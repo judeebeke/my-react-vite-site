@@ -8,7 +8,8 @@ export default defineConfig({
   plugins: [react(), postcss(), tailwindcss()],
    build: {
     outDir: 'dist'
-  }
+  },
+  assetsInclude: ["**/*.PNG"],
 });
 
 

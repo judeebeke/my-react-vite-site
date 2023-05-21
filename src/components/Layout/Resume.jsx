@@ -10,7 +10,7 @@ import resume from "../assets/resume/myresume.pdf";
 
 const Resume = () => {
   return (
-    <section className="section bg-lowMain" id="resume" data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-sine">
+    <section className="section bg-lowMain dark:bg-lowDark dark:text-white" id="resume" data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-sine">
       <Heading headingTitle="RESUME" />
       <a href={resume} download>
         <button className={`${buttonStyles} ${hoverLinkTransition} p-3`}>

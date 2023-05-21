@@ -6,7 +6,7 @@ const Footer = () => {
     const currentYear = currentDate.getFullYear();
 
   return (
-    <footer className="section mt-20 bg-lowMain" data-aos="fade-down" data-aos-duration="3000">
+    <footer className="section pt-10 bg-lowMain dark:bg-lowDark dark:text-white" data-aos="fade-down" data-aos-duration="3000">
         <h2 className={secondHeadingStyles}>Jude Ebeke</h2>
         <p className={`${infoParaStyles} text-center`}>Thank you for visiting my website! Feel free to reach out to me for collaborations, project inquiries, or just to say hello. Stay connected through my social media channels to get updates on my latest work. I look forward to connecting with you and exploring new opportunities together. Have a great day!</p>
         <h4 className="font-normal text-xl text-mildMain mb-4">&copy; Jude Ebeke {currentYear}</h4>

@@ -19,6 +19,11 @@ const GraphicsDesignProjects = () => {
     setIsViewerOpen(false);
   };
 
+  const imageViewerStyle = {
+    height: "500px",
+    width: "500PX",
+  }
+
   return (
     <section>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
@@ -35,7 +40,8 @@ const GraphicsDesignProjects = () => {
           );
         })}
 
-        {isViewerOpen && (
+      {isViewerOpen && (
+      <div className={imageViewerStyle}>
         <ImageViewer
           src={ graphicsProjectImage }
           currentIndex={ currentImage }
@@ -45,6 +51,7 @@ const GraphicsDesignProjects = () => {
           leftArrowComponent={<RxCaretLeft />}
           rightArrowComponent={<RxCaretRight />}
         />
+      </div>
       )}
       </div>
     </section>

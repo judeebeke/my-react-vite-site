@@ -17,6 +17,11 @@ import project10 from "../assets/graphicsproject/project10.jpg";
 import project11 from "../assets/graphicsproject/project11.jpg";
 import project12 from "../assets/graphicsproject/project12.jpg";
 
+import bandsite from "../assets/webproject/band-site.PNG";
+import contact from "../assets/webproject/contact-app.PNG";
+import dispezo from "../assets/webproject/dispezo.PNG";
+
+
 export const socialLinks = [
   {
     id: "git",
@@ -69,13 +74,11 @@ export const navLinks = [
 ];
 
 export const personalData = [
-  { type: "Birthday", value: "1 May 1995", id: "d1" },
-  { type: "Age", value: 30, id: "d2" },
-  { type: "Phone", value: "+234 902 3176 326", id: "d3" },
-  { type: "Website", value: "www.example.com", id: "d4" },
-  { type: "Email", value: "judeebekes67@gmail.com", id: "d5" },
-  { type: "City", value: "New York, USA", id: "d6" },
-  { type: "Freelance", value: "Available", id: "d7" },
+  { type: "Phone", value: "  +234 902 3176 326", id: "d3" },
+  { type: "Website", value: "  www.example.com", id: "d4" },
+  { type: "Email", value: "  judeebekes67@gmail.com", id: "d5" },
+  { type: "City", value: "  New York, USA", id: "d6" },
+  { type: "Freelance", value: "  Available", id: "d7" },
 ];
 
 export const skillSet = [
@@ -102,4 +105,33 @@ export const graphicsProjectImage = [
   project10,
   project11,
   project12,
+];
+
+export const webProjectImage = [
+  {
+    id: 'web2',
+    image: contact,
+    title: "Organisation Contact App",
+    description: "Organisation Contact App was built with ReactJS and Tailwind CSS, the app allows users to create a contact card which includes name, age and position. A filter system was added to the app, users details can be edited, and contact cards can also be deleted. To store and retrieve users info, Firebase Realtime database was used.",
+    url: "https://org-member-info-app.vercel.app/",
+    github: "https://github.com/judeebeke/a_react_contact_app",
+  },
+  {
+    id: 'web1',
+  image: bandsite,
+  title: "Z-Band",
+  description: "Z-Band is a fictional Band Website built with HTML, CSS, JS, and Bootstrap. In order to understand and practice responsiveness in web development, this project was taken.",
+  improvement: "In the future, better design can be made for the website with better frontend development tools. And all the site page will be completely built.",
+  url: "https://z-bandsite.netlify.app/",
+  github: "https://github.com/judeebeks/MusicBandSite",
+},
+{
+  id: 'web3',
+  image: dispezo,
+  title: "Dispezo Chat App",
+  description: "This is a mini chat app (unstable version) built with interesting features, such as, create room, join existing room (if room id and passcode are provided to user by room creator), room creators can delete rooms they created (this core feature is yet to be implemented), and interesting user experience. This app is been built with ReactJS, Tailwind CSS, and Firebase services was leveraged for the backend, such as authentication, authorisation, user's chats storage.",
+  improvement: "Improvements can be made on the app, such as, authentication and authorisation, and improved user interface.",
+  url: "https://despezo.netlify.app/",
+  github: "https://github.com/judeebeke/dispezo-app",
+}
 ];
