@@ -1,4 +1,4 @@
-import { useState, useEffect, Fragment } from "react";
+import { useState, useEffect, Fragment, useContext } from "react";
 import { ScaleLoader } from "react-spinners";
 import {BsMoonStars, BsSun} from 'react-icons/bs';
 import AOS from "aos";
@@ -15,6 +15,7 @@ import Testimonial from "./components/Layout/Testimonial";
 import Contact from "./components/Layout/Contact";
 import Footer from "./components/Layout/Footer";
 import ScrollToTopButton from "./components/UI/ScrollToTopButton";
+import portfolioContext from "./store/AppContext";
 import "aos/dist/aos.css";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
   const htmlEl = document.getElementById('htmlElement') 
   const bodyEl = document.getElementById('bodyElement') 
 
+  const {isMobileMenuActive} = useContext(portfolioContext)
 
   useEffect(() => {
     AOS.init({
@@ -67,7 +69,7 @@ function App() {
           <ScaleLoader color="#0678E3" size={100} />
         </div> :
         <Fragment>
-          {darkMode ? <button className="fixed cursor-pointer z-40 top-8 right-9 text-2xl font-extrabold text-white" onClick={lightModeHandler}><BsSun /></button> : <button className="fixed cursor-pointer z-40 top-8 right-9 text-2xl font-extrabold" onClick={darkModeHandler}><BsMoonStars /></button>}
+          {darkMode ? <button className={`fixed cursor-pointer z-40 ${isMobileMenuActive ? "top-20" : "top-8"} lg:top-8 right-8 text-2xl font-extrabold text-white`}onClick={lightModeHandler}><BsSun /></button> : <button className={`fixed cursor-pointer z-40 ${isMobileMenuActive ? "top-20" : "top-8"} lg:top-8 right-8 text-2xl font-extrabold`} onClick={darkModeHandler}><BsMoonStars /></button>}
           <DesktopNav />
           <MobileNav />
           <Layout>

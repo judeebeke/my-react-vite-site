@@ -10,7 +10,7 @@
   --dark: #272829;
   --hero: #cccccc;
   --lowDark: #0e151b;
-  --main: #0563bb;
+  --main: #0678e3;
   --lowwhite: #ddd;
 }
 
@@ -66,6 +66,11 @@ scroll-to-top-button:hover {
   visibility: visible;
 }
 
+.active {
+  background-color: #0678e3;
+  color: #ffffff;
+}
+
 /**
 * Desktop Navigation 
 */
@@ -75,7 +80,7 @@ scroll-to-top-button:hover {
   position: fixed;
   top: calc(100vh - 80%);
   left: 1rem;
-  height: 65%;
+  height: 60%;
   z-index: 30;
 }
 

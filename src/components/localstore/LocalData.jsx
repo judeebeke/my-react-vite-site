@@ -20,6 +20,8 @@ import project12 from "../assets/graphicsproject/project12.jpg";
 import bandsite from "../assets/webproject/band-site.PNG";
 import contact from "../assets/webproject/contact-app.PNG";
 import dispezo from "../assets/webproject/dispezo.PNG";
+import sammy from "../assets/webproject/sammy-store.PNG";
+import todo from "../assets/webproject/todo-app.PNG";
 
 
 export const socialLinks = [
@@ -128,11 +130,29 @@ export const webProjectImage = [
 },
 {
   id: 'web3',
+  image: sammy,
+  title: "Sammy Store",
+  description: "Sammy Store a website built for Sammy Store to showcase the store's Products and all a visitor needs to know about Sammy Store. The website was built with HTML, CSS & Bootstrap, and JavaScript",
+  improvement: "Improvements can be made on the websites backend to accept orders and contact request from site visitors",
+  url: "https://sammy-store.vercel.app/",
+  github: "https://github.com/judeebeke/Sammy-Store",
+},
+{
+  id: 'web4',
   image: dispezo,
   title: "Dispezo Chat App",
   description: "This is a mini chat app (unstable version) built with interesting features, such as, create room, join existing room (if room id and passcode are provided to user by room creator), room creators can delete rooms they created (this core feature is yet to be implemented), and interesting user experience. This app is been built with ReactJS, Tailwind CSS, and Firebase services was leveraged for the backend, such as authentication, authorisation, user's chats storage.",
   improvement: "Improvements can be made on the app, such as, authentication and authorisation, and improved user interface.",
   url: "https://despezo.netlify.app/",
   github: "https://github.com/judeebeke/dispezo-app",
+},
+{
+  id: 'web5',
+  image: todo,
+  title: "Todo App",
+  description: "This is a mini Todo app built with ReactJS, the full CRUD functionality was applied in the app where users are able to create, read, update and delete todos. Localstorage was use as alternative of database.",
+  improvement: "Improvements can be made on the backend, Firebase Realtime Database can be used instead of Browser's Localstorage, this means authentication and authorization should be implemented to give authorized and authenticated users access to their data.",
+  url: "https://megatodoapp.vercel.app/",
+  github: "https://github.com/judeebeke/todo-app",
 }
 ];

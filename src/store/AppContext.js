@@ -1,8 +1,9 @@
 import { createContext } from "react";
 
 const portfolioContext = createContext({
-    darkMode: null,
-    changeDisplay: ()=>{},
+    isMobileMenuActive: null,
+    closeMobileActiveHandler: ()=>{},
+      openMobileActiveHandler: ()=>{}
 });
 
 export default portfolioContext;

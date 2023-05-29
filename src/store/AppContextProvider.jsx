@@ -5,15 +5,21 @@ import PropTypes from 'prop-types';
 
 const PortfolioContextProvider = ({children}) => {
 
-    const [darkMode, setDarkMode] = useState(false);
+  const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
 
-    const setDarkModeHandler = () => {
-        setDarkMode(prev => !prev)
+
+    const closeMobileActiveHandler = () => {
+      setIsMobileMenuActive(false)
+    }
+
+    const openMobileActiveHandler = () => {
+      setIsMobileMenuActive(true)
     }
 
     const appContext = {
-        darkMode,
-        changeDisplay: setDarkModeHandler,
+      isMobileMenuActive,
+      closeMobileActiveHandler,
+      openMobileActiveHandler
     }
 
   return (
