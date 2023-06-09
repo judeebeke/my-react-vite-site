@@ -15,7 +15,7 @@ const MobileNav = () => {
       <div
         className={`${
           isMobileMenuActive
-            ? "opacity-40 w-screen h-screen bg-mildMain overlay"
+            ? "opacity-40 w-screen h-screen bg-mildMain dark:bg-lowWhite overlay"
             : "hidden"
         }`}
         onClick={closeMobileActiveHandler}
@@ -41,7 +41,7 @@ const MobileNav = () => {
       <ul
         className={`${
           isMobileMenuActive
-            ? "w-44 flex flex-col gap-y-6 pl-8 bg-white pt-5 navLinks"
+            ? "w-44 flex flex-col gap-y-6 pl-8 bg-white dark:bg-lowDark pt-5 navLinks"
             : "hidden"
         }`}
       >

@@ -69,7 +69,7 @@ function App() {
           <ScaleLoader color="#0678E3" size={100} />
         </div> :
         <Fragment>
-          {darkMode ? <button className={`fixed cursor-pointer z-40 ${isMobileMenuActive ? "top-20" : "top-8"} lg:top-8 right-8 text-2xl font-extrabold text-white`}onClick={lightModeHandler}><BsSun /></button> : <button className={`fixed cursor-pointer z-40 ${isMobileMenuActive ? "top-20" : "top-8"} lg:top-8 right-8 text-2xl font-extrabold`} onClick={darkModeHandler}><BsMoonStars /></button>}
+          {darkMode ? <button className={`fixed cursor-pointer z-40 ${isMobileMenuActive ? "top-20" : "top-8"} lg:top-8 right-5 text-2xl font-extrabold text-white`}onClick={lightModeHandler}><BsSun /></button> : <button className={`fixed cursor-pointer z-40 ${isMobileMenuActive ? "top-20" : "top-8"} lg:top-8  right-5 text-2xl font-extrabold`} onClick={darkModeHandler}><BsMoonStars /></button>}
           <DesktopNav />
           <MobileNav />
           <Layout>

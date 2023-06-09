@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,600;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,7 +19,7 @@
 }
 
 html {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 body {
@@ -138,7 +138,7 @@ scroll-to-top-button:hover {
   position: relative;
   width: 100vw;
   margin: 0 auto;
-  padding: 7% 14% 5% 10%;
+  padding: 7% 18% 5% 15%;
   animation: navappears 1s ease-out forwards;
 }
 
@@ -154,7 +154,7 @@ scroll-to-top-button:hover {
 }
 
  .closeBtn {
-  right: 3rem;
+  right: 1rem;
 }
 
 .hamburger:hover, .closeBtn:hover {
