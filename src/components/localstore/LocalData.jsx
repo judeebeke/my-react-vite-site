@@ -160,9 +160,9 @@ export const webProjectImage = [
   id: 'web6',
   image: openFashion,
   title: "Open Fashion ",
-  description: "An E-commerce Application (Frontend Only) built with React Js, Tailwind CSS for UI, Redux for state management (not yet implemented), React Router for routing (Only blog page is active) and other libraries for smooth and interactive user experience.",
+  description: "An E-commerce Application (Mobile First & Frontend Only) built with React Js, Tailwind CSS for UI, Redux for state management (not yet implemented), React Router for routing (Only blog page is active) and other libraries for smooth and interactive user experience.",
   improvement: "Application currently under development",
   url: "https://open-fashion.netlify.app/",
-  github: "https://github.com/judeebeke/todo-app",
+  github: "https://github.com/judeebeke/my-react-vite-site",
 }
 ];
