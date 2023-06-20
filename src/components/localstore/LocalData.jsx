@@ -22,6 +22,7 @@ import contact from "../assets/webproject/contact-app.PNG";
 import dispezo from "../assets/webproject/dispezo.PNG";
 import sammy from "../assets/webproject/sammy-store.PNG";
 import todo from "../assets/webproject/todo-app.PNG";
+import openFashion from "../assets/webproject/open-fashion.PNG";
 
 
 export const socialLinks = [
@@ -153,6 +154,15 @@ export const webProjectImage = [
   description: "This is a mini Todo app built with ReactJS, the full CRUD functionality was applied in the app where users are able to create, read, update and delete todos. Localstorage was use as alternative of database.",
   improvement: "Improvements can be made on the backend, Firebase Realtime Database can be used instead of Browser's Localstorage, this means authentication and authorization should be implemented to give authorized and authenticated users access to their data.",
   url: "https://megatodoapp.vercel.app/",
+  github: "https://github.com/judeebeke/todo-app",
+},
+{
+  id: 'web6',
+  image: openFashion,
+  title: "Open Fashion ",
+  description: "An E-commerce Application (Frontend Only) built with React Js, Tailwind CSS for UI, Redux for state management (not yet implemented), React Router for routing (Only blog page is active) and other libraries for smooth and interactive user experience.",
+  improvement: "Application currently under development",
+  url: "https://open-fashion.netlify.app/",
   github: "https://github.com/judeebeke/todo-app",
 }
 ];
