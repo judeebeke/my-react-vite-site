@@ -31,20 +31,6 @@ import project12 from "../assets/graphicsproject/project12.jpg";
 import project13 from "../assets/graphicsproject/project13.jpg";
 import project14 from "../assets/graphicsproject/project14.jpg";
 
-// import projectthumbnail1 from "../assets/graphicsproject/project1-thumbnail.jpg";
-// import projectthumbnail2 from "../assets/graphicsproject/project2-thumbnail.jpg";
-// import projectthumbnail3 from "../assets/graphicsproject/project3-thumbnail.jpg";
-// import projectthumbnail4 from "../assets/graphicsproject/project4-thumbnail.jpg";
-// import projectthumbnail5 from "../assets/graphicsproject/project5-thumbnail.jpg";
-// import projectthumbnail6 from "../assets/graphicsproject/project6-thumbnail.jpg";
-// import projectthumbnail7 from "../assets/graphicsproject/project7-thumbnail.jpg";
-// import projectthumbnail8 from "../assets/graphicsproject/project8-thumbnail.jpg";
-// import projectthumbnail9 from "../assets/graphicsproject/project9-thumbnail.jpg";
-// import projectthumbnail11 from "../assets/graphicsproject/project11-thumbnail.jpg";
-// import projectthumbnail12 from "../assets/graphicsproject/project12-thumbnail.jpg";
-// import projectthumbnail13 from "../assets/graphicsproject/project13-thumbnail.jpg";
-// import projectthumbnail14 from "../assets/graphicsproject/project14-thumbnail.jpg";
-
 import cert1 from "../assets/resume/certificate.png";
 import cert2 from "../assets/resume/certificate2.png";
 import cert3 from "../assets/resume/certificate3.jpg";
@@ -204,55 +190,42 @@ export const skillSet = [
 export const graphicsProjectImage = [
   {
     original: project1,
-    
   },
   {
     original: project2,
-    
   },
   {
     original: project3,
-    
   },
   {
     original: project4,
-    
   },
   {
     original: project5,
-    
   },
   {
     original: project6,
-    
   },
   {
     original: project7,
-    
   },
   {
     original: project8,
-    
   },
   {
     original: project9,
-    
   },
   {
     original: project11,
-    
   },
   {
     original: project12,
-    
   },
   {
     original: project13,
-    
   },
   {
     original: project14,
-    
   },
 ];
 

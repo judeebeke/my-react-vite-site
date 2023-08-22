@@ -38,14 +38,15 @@ const WebDevProjects = () => {
                     onClick={() => {
                       viewProjectDetailsHandler(true, data.id);
                     }}
+                    title="View Details"
                   >
                     <AiOutlineEye />
                   </button>
                   <div className={`${flexStyle} gap-x-12 mt-3`}>
-                    <a href={data.url} target="_blank" rel="noreferrer">
+                    <a href={data.url} target="_blank" rel="noreferrer" title="Visit Website">
                       <AiOutlineLink />
                     </a>
-                    <a href={data.github} target="_blank" rel="noreferrer">
+                    <a href={data.github} target="_blank" rel="noreferrer" title="GitHub Repository">
                       <AiOutlineGithub />
                     </a>
                   </div>

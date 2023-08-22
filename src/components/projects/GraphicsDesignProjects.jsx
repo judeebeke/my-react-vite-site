@@ -12,6 +12,7 @@ const GraphicsDesignProjects = () => {
               items={graphicsProjectImage}
               showBullets={true}
               autoPlay={true}
+              lazyLoad={true}
             />
       </div>
     </section>
