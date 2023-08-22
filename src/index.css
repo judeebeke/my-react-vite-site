@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --milky-white: rgba(255, 255, 255, 0.8);
   --milky-black: rgba(13, 21, 28, 0.8);

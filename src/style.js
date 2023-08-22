@@ -1,4 +1,4 @@
-export const sectionParaStyles = `font-normal text-xl text-center`;
+export const sectionParaStyles = `font-normal text-xl text-start`;
 
 export const infoParaStyles = `font-normal text-xl italic break-words`;
 

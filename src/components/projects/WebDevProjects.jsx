@@ -24,10 +24,10 @@ const WebDevProjects = () => {
         return (
           <figure
             key={data.id}
-            className="relative max-w-lg max-h-lg text-dark lg:w-80"
+            className="relative max-w-lg max-h-lg text-white lg:w-80"
           >
            {!viewProjectDetails &&  <div
-              className={`absolute top-0 left-0 w-full h-full font-bold text-center text-3xl ${flexStyle} flex-col gap-y-6 opacity-0 transition-all ease-linear duration-300 hover:opacity-70 focus:opacity-70 hover:bg-white focus:bg-white`}
+              className={`absolute top-0 left-0 w-full h-full font-bold text-center text-3xl ${flexStyle} flex-col gap-y-6 opacity-0 transition-all ease-linear duration-300 hover:opacity-70 focus:opacity-70 hover:bg-dark focus:bg-dark`}
               onMouseLeave={() => {
                 viewProjectDetailsHandler(false, 0);
               }}
@@ -41,7 +41,7 @@ const WebDevProjects = () => {
                   >
                     <AiOutlineEye />
                   </button>
-                  <div className={`${flexStyle} gap-x-10`}>
+                  <div className={`${flexStyle} gap-x-12 mt-3`}>
                     <a href={data.url} target="_blank" rel="noreferrer">
                       <AiOutlineLink />
                     </a>
@@ -68,6 +68,7 @@ const WebDevProjects = () => {
                 </div> }
             <img
               src={data.image}
+              loading="lazy"
               className="w-full h-full object-cover"
               alt="My Graphics Projects"
             />

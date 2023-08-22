@@ -33,7 +33,7 @@ const DesktopNav = () => {
                   currentNav === link.navLinkText && isNavFull
                     ? "w-auto"
                     : "w-14"
-                } desktopNavList flex justify-center items-center h-14 p-4 text-center text-2xl text-dark bg-lowWhite hover:bg-main hover:text-white rounded-full`}
+                } desktopNavList flex justify-center cursor-pointer items-center h-14 p-4 text-center text-2xl text-dark bg-lowWhite hover:bg-main hover:text-white rounded-full`}
                 activeClass="active"
                 to={link.navLinksRef}
                 spy={true}

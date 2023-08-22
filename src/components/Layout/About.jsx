@@ -9,14 +9,14 @@ const About = () => {
   return (
     <section className='section bg-lowMain dark:bg-lowDark dark:text-white' id="about" data-aos="zoom-in" data-aos-duration="2000">
         <Heading headingTitle="ABOUT" />
-        <p className={sectionParaStyles}>Welcome to my portfolio! I am a multidisciplinary professional with expertise in both frontend development and graphics design. With +1 years of experience in the industry, I bring a unique blend of technical skills and creative vision to my work.
+        <p className={sectionParaStyles}>Welcome to my portfolio! I&apos;m a multidisciplinary professional experienced in frontend development and graphics design. With +1 year in the industry, I bring a blend of technical skills and creative vision.
 <br/>
 <br/>
-As a frontend developer, I specialize in building interactive and user-friendly web applications. Using modern web technologies like HTML, CSS, and JavaScript, I create seamless digital experiences that engage and captivate users. I have a strong command over frontend frameworks and libraries such as React and Tailwind CSS, allowing me to develop robust and scalable solutions. Attention to detail, clean code, and responsive design are at the core of my development process.
+In frontend development, I craft interactive web apps using HTML, CSS, and JavaScript. Proficient in React and Tailwind CSS, I focus on detail, clean code, and responsive design.
 <br/>
 <br/>
 
-In the realm of graphics design, I am passionate about visual storytelling and creating visually stunning designs. I have a keen eye for aesthetics and a deep understanding of design principles. Whether it&apos;s logo design, branding, or illustration, I strive to create captivating visuals that effectively communicate messages and leave a lasting impact. CorelDraw is my playground, where I bring ideas to life with creativity and precision, and I am alos conversant with other Design Softwares such as Adobe Photoshop.
+For graphics design, I&apos;m passionate about visual storytelling and create captivating designs. CorelDraw and Adobe Photoshop are my tools for turning ideas into stunning visuals.
 <br/>
 <br/>
 </p>

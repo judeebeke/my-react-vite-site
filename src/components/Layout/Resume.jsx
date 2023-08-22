@@ -1,3 +1,4 @@
+
 import Heading from "../UI/Heading";
 import {
   infoParaStyles,
@@ -7,9 +8,10 @@ import {
   hoverLinkTransition,
 } from "../../style";
 import resume from "../assets/resume/myresume.pdf";
+import { certificates } from "../localstore/LocalData";
 
 const Resume = () => {
-  return (
+    return (
     <section className="section bg-lowMain dark:bg-lowDark dark:text-white" id="resume" data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-sine">
       <Heading headingTitle="RESUME" />
       <a href={resume} download>
@@ -26,6 +28,24 @@ const Resume = () => {
           </p>
         </div>
       </aside>
+      <section className="flex flex-col items-center justify-centermt-4">
+      <h3 className={thirdHeadingStyles}>Certificates</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 justify-between items-center">
+        {certificates.map((cert) => {
+          return (
+            <figure key={cert.id} className="flex flex-col gap-y-2 ">
+              <img
+                src={cert.cert}
+                loading="lazy"
+                className="w-[6rem] h-auto object-contain lg:w-64"
+                alt={cert.title}
+              />
+              <p className="font-bold text-base">{cert.title}</p>
+            </figure>
+          );
+        })}
+      </div>
+        </section>
     </section>
   );
 };
