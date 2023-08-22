@@ -126,7 +126,7 @@ export const skillSet = [
     icon: <AiFillHtml5 />,
     name: "HTML5",
     color: "text-html",
-    hovercolor: "hover:text-html",
+    hovercolor: "text-html",
     link: "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
   },
   {
@@ -134,7 +134,7 @@ export const skillSet = [
     icon: <SiCss3 />,
     name: "CSS3",
     color: "text-css",
-    hovercolor: "hover:text-css",
+    hovercolor: "text-css",
     link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
   },
   {
@@ -142,7 +142,7 @@ export const skillSet = [
     icon: <SiJavascript />,
     name: "JavaScript",
     color: "text-js",
-    hovercolor: "hover:text-js",
+    hovercolor: "text-js",
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
@@ -150,7 +150,7 @@ export const skillSet = [
     icon: <RiReactjsFill />,
     name: "Reactjs",
     color: "text-react",
-    hovercolor: "hover:text-react",
+    hovercolor: "text-react",
     link: "https://react.dev/",
   },
   {
@@ -158,7 +158,7 @@ export const skillSet = [
     icon: <SiTailwindcss />,
     name: "Tailwind CSS",
     color: "text-tail",
-    hovercolor: "hover:text-tail",
+    hovercolor: "text-tail",
     link: "https://v2.tailwindcss.com/docs",
   },
   {
@@ -166,7 +166,7 @@ export const skillSet = [
     icon: <SiFirebase />,
     name: "Firebase",
     color: "text-fire",
-    hovercolor: "hover:text-fire",
+    hovercolor: "text-fire",
     link: "https://firebase.google.com/docs",
   },
   {
@@ -174,7 +174,7 @@ export const skillSet = [
     icon: <MdDraw />,
     name: "CorelDraw",
     color: "text-corel",
-    hovercolor: "hover:text-corel",
+    hovercolor: "text-corel",
     link: "https://learn.corel.com/tutorials/coreldraw-document-setup/",
   },
   {
@@ -182,7 +182,7 @@ export const skillSet = [
     icon: <SiAdobephotoshop />,
     name: "Photoshop",
     color: "text-photo",
-    hovercolor: "hover:text-photo",
+    hovercolor: "text-photo",
     link: "https://helpx.adobe.com/photoshop/user-guide.html",
   },
 ];
