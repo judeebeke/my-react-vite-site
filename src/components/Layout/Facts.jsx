@@ -9,7 +9,7 @@ const Facts = () => {
       <ul className='grid grid-cols-2 gap-x-16 gap-y-12 md:px-24 text-center md:text-start md:grid-cols-2 lg:grid-cols-3 md:gap-x-28 md:gap-y-14 lg:gap-x-38 lg:gap-y-20 xl:gap-x-40 xl:gap-y-20 mt-6'>
         {skillSet.map(skill => {
             return(
-                <li key={skill.id} className={`flex flex-col justify-center items-center text-8xl font-extrabold ${hoverLinkTransition} lg:text-9xl scaleSkill ${skill.color} lg:text-gray lg:hover:${skill.hovercolor}`}>
+                <li key={skill.id} className={`flex flex-col justify-center items-center text-8xl font-extrabold ${hoverLinkTransition} lg:text-9xl scaleSkill ${skill.color} lg:text-gray hover:${skill.hovercolor}`}>
                   <a href={skill.link} target='_blank' rel="noreferrer">{skill.icon}</a>
                   <p className={sectionParaStyles}>{skill.name}</p>
                 </li>
