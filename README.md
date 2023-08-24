@@ -28,15 +28,14 @@ This portfolio site showcases my skills, projects, and experiences as a [Your Pr
 ## Technologies Used
 
 - HTML5, CSS3, JavaScript
-- [Any frameworks or libraries used, e.g., React, Bootstrap]
-- [Any build tools or package managers, e.g., Webpack, npm]
-- [Any other relevant technologies]
+- React, Tailwind CSS
+- Vite, npm]
 
 ## Installation
 
-1. Clone this repository: `git clone https://github.com/yourusername/portfolio-site.git`
+1. Clone this repository: `git clone https://github.com/judeebeke/my-react-vite-site.git`
 2. Navigate to the project directory: `cd portfolio-site`
-3. [Install any dependencies, e.g., run `npm install`]
+3. [Install any dependencies run `npm install`]
 
 ## Usage
 
@@ -46,12 +45,13 @@ This portfolio site showcases my skills, projects, and experiences as a [Your Pr
 
 ## Demo
 
-[Provide a link to a live demo or hosted version of your portfolio site.]
+Demo is unavailable!
 
 ## Screenshots
 
-![Screenshot 1](screenshots/screenshot1.png)
-![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 1](main/src/components/assets/readme-display/site-screenshots.PNG)
+![Screenshot 2](main/src/components/assets/readme-display/site-screenshots1.PNG)
+![Screenshot 2](main/src/components/assets/readme-display/site-screenshots2.PNG)
 
 ## Contact
 
