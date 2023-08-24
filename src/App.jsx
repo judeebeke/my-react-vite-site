@@ -32,22 +32,27 @@ function App() {
       duration: 1500,
     });
 
+    const dark_Mode = JSON.parse(localStorage.getItem('dark-mode'))
+
+    if(dark_Mode === null) {
+      setDarkMode(false)
+    localStorage.setItem('dark-mode', JSON.stringify({dark: false}))
+    } else {
+      setDarkMode(dark_Mode.dark)
+      let intantMode = dark_Mode.dark;
+
+      htmlEl.classList.add(intantMode && 'dark');
+      bodyEl.classList.add(intantMode && 'darkMode');
+    }
+
    let loaderSetTimeout =setTimeout(() =>{
       setLoading(false)
     }, 1500)
 
-    const dark_Mode = JSON.parse(localStorage.getItem('dark-mode'))
-
-    if(dark_Mode !== null) {
-      setDarkMode(dark_Mode.dark)
-    }
-
-
-
     return (() => {
       clearTimeout(loaderSetTimeout)
     })
-  }, []);
+  }, [htmlEl.classList, bodyEl.classList]);
 
   const darkModeHandler = () => {
     setDarkMode(true)

@@ -216,7 +216,6 @@ scroll-to-top-button:hover {
   flex-direction: column;
   row-gap: 1rem;
   text-align: start;
-  /* color: var(--lowDark); */
   z-index: 10;
 }
 
