@@ -16,7 +16,7 @@ Welcome to my portfolio site! This repository contains the code and assets for m
 
 ## Description
 
-This portfolio site showcases my skills, projects, and experiences as a [Your Profession] professional. It provides a visually appealing and interactive way for visitors to learn more about me and my work.
+This portfolio site showcases my skills, projects, and experiences as a Frontend Web Developer professional. It provides a visually appealing and interactive way for visitors to learn more about me and my work.
 
 ## Features
 
@@ -29,19 +29,19 @@ This portfolio site showcases my skills, projects, and experiences as a [Your Pr
 
 - HTML5, CSS3, JavaScript
 - React, Tailwind CSS
-- Vite, npm]
+- Vite, NPM
 
 ## Installation
 
 1. Clone this repository: `git clone https://github.com/judeebeke/my-react-vite-site.git`
 2. Navigate to the project directory: `cd portfolio-site`
-3. [Install any dependencies run `npm install`]
+3. Install any dependencies run `npm install`
 
 ## Usage
 
 1. Customize the content in the HTML and CSS files to match your information and style.
 2. Replace the placeholder project details and images with your own projects.
-3. [If applicable, update any configuration files or settings.]
+3. If applicable, update any configuration files or settings.
 
 ## Demo
 
@@ -49,9 +49,9 @@ Demo is unavailable!
 
 ## Screenshots
 
-![Screenshot 1](main/src/components/assets/readme-display/site-screenshots.PNG)
-![Screenshot 2](main/src/components/assets/readme-display/site-screenshots1.PNG)
-![Screenshot 2](main/src/components/assets/readme-display/site-screenshots2.PNG)
+![Screenshot 1](src/components/assets/readme-display/site-screenshots.PNG)
+![Screenshot 2](src/components/assets/readme-display/site-screenshots1.PNG)
+![Screenshot 2](src/components/assets/readme-display/site-screenshots2.PNG)
 
 ## Contact
 
