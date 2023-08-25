@@ -11,7 +11,6 @@ Welcome to my portfolio site! This repository contains the code and assets for m
 - [Usage](#usage)
 - [Demo](#demo)
 - [Screenshots](#screenshots)
-- [License](#license)
 - [Contact](#contact)
 
 ## Description
