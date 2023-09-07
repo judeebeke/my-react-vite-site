@@ -29,6 +29,7 @@ module.exports = {
       photo: "#044386",
       corel: "#60AA45",
       tail: "#07aec4",
+      next: "#111111",
       transparent: "transparent",
     }
   },

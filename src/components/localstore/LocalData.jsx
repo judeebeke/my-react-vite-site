@@ -16,6 +16,7 @@ import {
 } from "react-icons/si";
 import { RiReactjsFill } from "react-icons/ri";
 import { MdDraw } from "react-icons/md";
+import {TbBrandNextjs} from "react-icons/tb";
 
 import project1 from "../assets/graphicsproject/project1.jpg";
 import project2 from "../assets/graphicsproject/project2.jpg";
@@ -35,7 +36,7 @@ import cert1 from "../assets/resume/certificate.png";
 import cert2 from "../assets/resume/certificate2.png";
 import cert3 from "../assets/resume/certificate3.jpg";
 
-import bandsite from "../assets/webproject/band-site.PNG";
+import foodOrderApp from "../assets/webproject/food-order-app.PNG";
 import contact from "../assets/webproject/contact-app.PNG";
 import dispezo from "../assets/webproject/dispezo.PNG";
 import sammy from "../assets/webproject/sammy-store.PNG";
@@ -116,7 +117,7 @@ export const personalData = [
   { type: "Phone", value: "  +234 902 3176 326", id: "d3" },
   { type: "Website", value: "  https://ebekesjude.vercel.app", id: "d4" },
   { type: "Email", value: "  judeebekes67@gmail.com", id: "d5" },
-  { type: "City", value: "  Kaduna, Nigeria", id: "d6" },
+  { type: "City", value: "  Abuja, Nigeria", id: "d6" },
   { type: "Freelance", value: "  Available", id: "d7" },
 ];
 
@@ -184,6 +185,14 @@ export const skillSet = [
     color: "text-photo",
     hovercolor: "text-photo",
     link: "https://helpx.adobe.com/photoshop/user-guide.html",
+  },
+  {
+    id: "s9",
+    icon: <TbBrandNextjs />,
+    name: "NextJS",
+    color: "text-next",
+    hovercolor: "text-next",
+    link: "https://nextjs.org/docs",
   },
 ];
 
@@ -285,13 +294,13 @@ export const webProjectImage = [
   },
   {
     id: "web6",
-    image: bandsite,
-    title: "Z-Band",
+    image: foodOrderApp,
+    title: "Mini Food Order App",
     description:
-      "Z-Band is a fictional Band Website built with HTML, CSS, JS, and Bootstrap. In order to understand and practice responsiveness in web development, this project was taken.",
+      "A Basic Food Order Application developed with React, HTML, CSS, React Reducer and Context API, and Firebase.",
     improvement:
-      "In the future, better design can be made for the website with better frontend development tools. And all the site page will be completely built.",
-    url: "https://z-bandsite.netlify.app/",
-    github: "https://github.com/judeebeks/MusicBandSite",
+      "Authentication and Authorization feature can be added.",
+    url: "https://demo-food-order-app.netlify.app/",
+    github: "https://github.com/judeebeke/food-order-app",
   },
 ];
