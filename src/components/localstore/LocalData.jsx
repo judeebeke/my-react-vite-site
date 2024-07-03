@@ -239,17 +239,17 @@ export const graphicsProjectImage = [
 ];
 
 export const webProjectImage = [
-  {
-    id: "web4",
-    image: contact,
-    title: "Organisation Contact App",
-    description:
-      "Organisation Contact App was built with ReactJS and Tailwind CSS, the app allows users to create a contact card which includes name, age and position. A filter system was added to the app, users details can be edited, and contact cards can also be deleted. To store and retrieve users info, Firebase Realtime database was used.",
-    improvement:
-      "Improvements can be made on the app, such as, authentication and authorisation, and improved user interface.",
-    url: "https://org-member-info-app.vercel.app/",
-    github: "https://github.com/judeebeke/a_react_contact_app",
-  },
+  // {
+  //   id: "web4",
+  //   image: contact,
+  //   title: "Organisation Contact App",
+  //   description:
+  //     "Organisation Contact App was built with ReactJS and Tailwind CSS, the app allows users to create a contact card which includes name, age and position. A filter system was added to the app, users details can be edited, and contact cards can also be deleted. To store and retrieve users info, Firebase Realtime database was used.",
+  //   improvement:
+  //     "Improvements can be made on the app, such as, authentication and authorisation, and improved user interface.",
+  //   url: "https://org-member-info-app.vercel.app/",
+  //   github: "https://github.com/judeebeke/a_react_contact_app",
+  // },
   {
     id: "web3",
     image: sammy,
@@ -261,16 +261,16 @@ export const webProjectImage = [
     url: "https://sammy-store.vercel.app/",
     github: "https://github.com/judeebeke/Sammy-Store",
   },
-  {
-    id: "web2",
-    image: dispezo,
-    title: "Dispezo Chat App",
-    description:
-      "This is a mini chat app (version 1.1) built with interesting features, such as, create room, join existing room (if room id and passcode are provided to user by room creator), room creators can delete room chats, and interesting user experience. This app is been built with ReactJS, Tailwind CSS, and Firebase services was leveraged for the backend, such as authentication, authorisation, user's chats storage.",
-    improvement: "nil",
-    url: "https://despezo.netlify.app/",
-    github: "https://github.com/judeebeke/dispezo-app",
-  },
+  // {
+  //   id: "web2",
+  //   image: dispezo,
+  //   title: "Dispezo Chat App",
+  //   description:
+  //     "This is a mini chat app (version 1.1) built with interesting features, such as, create room, join existing room (if room id and passcode are provided to user by room creator), room creators can delete room chats, and interesting user experience. This app is been built with ReactJS, Tailwind CSS, and Firebase services was leveraged for the backend, such as authentication, authorisation, user's chats storage.",
+  //   improvement: "nil",
+  //   url: "https://despezo.netlify.app/",
+  //   github: "https://github.com/judeebeke/dispezo-app",
+  // },
   {
     id: "web5",
     image: todo,

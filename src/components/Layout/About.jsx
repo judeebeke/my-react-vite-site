@@ -9,10 +9,10 @@ const About = () => {
   return (
     <section className='section bg-lowMain dark:bg-lowDark dark:text-white' id="about" data-aos="zoom-in" data-aos-duration="2000">
         <Heading headingTitle="ABOUT" />
-        <p className={sectionParaStyles}>Welcome to my portfolio! I&apos;m a multidisciplinary professional experienced in frontend development and graphics design. With +1 year in the industry, I bring a blend of technical skills and creative vision.
+        <p className={sectionParaStyles}>Welcome to my portfolio! I&apos;m a multidisciplinary professional experienced in Wen development and graphics design. With +3 year in the industry, I bring a blend of technical skills and creative vision.
 <br/>
 <br/>
-In frontend development, I craft interactive web apps using HTML, CSS, and JavaScript. Proficient in React and Tailwind CSS, I focus on detail, clean code, and responsive design.
+In Web development, I craft interactive web apps using HTML, CSS, and JavaScript (Frontend), Firebase, Nodejs, and MySQL (Backend). I'm proficient in React, Tailwind CSS and Express JS (Frameworks). I focus on detail, clean code, and responsive design.
 <br/>
 <br/>
 
