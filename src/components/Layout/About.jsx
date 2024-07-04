@@ -24,7 +24,7 @@ For graphics design, I&apos;m passionate about visual storytelling and create ca
             <img src={mypicture} className='w-full h-9/12 lg:w-80' alt="Jude Ebeke" data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease-in-sine" />
             <div data-aos="fade-right" data-aos-duration="3500" data-aos-offset="300" data-aos-easing="ease-in-sine">
               <h3 className={thirdHeadingStyles}>Graphics Designer & Web Developer.</h3>
-              <p className={infoParaStyles}>I&apos;m a skilled professional with expertise in frontend web development and graphics design. I specialize in creating engaging web experiences with clean code and a user-centric approach.</p>
+              <p className={infoParaStyles}>I&apos;m a skilled professional with expertise in web development and graphics design. I specialize in creating engaging web experiences with clean code and a user-centric approach.</p>
               <div>
                 <ul className='grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6'>
                 {personalData.map(data => {

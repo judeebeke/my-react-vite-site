@@ -59,8 +59,8 @@ const WebDevProjects = () => {
               className="w-full h-auto min-h-[5rem] min-w-[80%] object-cover"
               alt="My Graphics Projects"
             />
-            <div className={`absolute bottom-0 left-0 w-full z-10 bg-gradient-to-t from-main h-16 ${data.id === currentViewOverlay && viewOverlay ? "visible" : "invisible"} ${hoverLinkTransition} `}>
-             <h5 className="font-bold text-sm text-white px-5 mt-8 hidden md:block z-20">{data.title}</h5>
+            <div className={`absolute bottom-0 left-0 w-full z-10 hidden md:block bg-gradient-to-t from-main h-16 ${data.id === currentViewOverlay && viewOverlay ? "visible" : "invisible"} ${hoverLinkTransition}`}>
+             <h5 className="font-bold text-sm text-white px-5 mt-8 z-20">{data.title}</h5>
             </div>
         </div>
           <div className="w-full">
